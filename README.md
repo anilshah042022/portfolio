@@ -4,7 +4,7 @@
 <div align="center">
   
 
-  <h3><b>Hello Microverse project</b></h3>
+  <h3><b>My Portfolio</b></h3>
 
 </div>
 
@@ -76,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://anilshah042022.github.io/hello-world/)
+- [Live Demo Link](https://anilshah042022.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
