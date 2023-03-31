@@ -1,7 +1,6 @@
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable no-empty-source */
 
-
 html,
 body {
   background-color: #f7f7f9;
@@ -286,7 +285,7 @@ body {
 }
 
 #about-section {
-  background:#fff;
+  background: #fff;
   padding: 6rem 0;
   border-top-right-radius: 5.5rem;
 }
@@ -493,7 +492,7 @@ body {
     background: url('./images/header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color:#fff;
+    background-color: #fff;
     border-bottom-left-radius: 5.5rem;
     background-position: -394px -2px;
     margin-top: 84px;
