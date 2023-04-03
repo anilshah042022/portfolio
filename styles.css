@@ -1,19 +1,26 @@
-/* stylelint-disable no-descending-specificity */
-/* stylelint-disable no-empty-source */
-
 html,
 body {
-  background-color: #f7f7f9;
+  background-color: white;
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  box-sizing: border-box;  
 }
-
+/*
 .container {
   width: 90%;
   margin: auto;
+  padding: 18px 0;
+  background-color: #fff;
+  position: fixed;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+*/
 
 #navbar {
   padding: 18px 0;
@@ -25,18 +32,28 @@ body {
   z-index: 5;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+}
+
 #navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.page_logo {
+.my-logo {
   color: #6070ff;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 700;
   display: block;
+  transition: 0.8s;
+}
+
+.my-logo:hover {
+  transform: rotateX(360deg);
 }
 
 .nav-toggle-btn {
@@ -63,7 +80,7 @@ body {
 }
 
 .nav-links .nav-link:hover {
-  background: #6070ff;
+  background: lightgray;
   cursor: pointer;
 }
 
@@ -144,18 +161,18 @@ body {
   padding-left: 0 !important;
 }
 
-#work-section {
+#my-project {
   background: #f7f7f9;
   padding: 6rem 0;
 }
 
-#work-section .container {
+#my-project .container {
   display: grid;
   grid-template-columns: 100%;
   row-gap: 3rem;
 }
 
-.card-work {
+.my-project-work {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -164,9 +181,14 @@ body {
   align-items: center;
   padding: 16px;
   gap: 12px;
+  transition: transform .2s;
 }
 
-.card-content {
+.my-project-work img:hover {
+  transform: scale(1.1);
+}
+
+.my-project-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -176,7 +198,7 @@ body {
   box-sizing: border-box;
 }
 
-.card-work .card-content .project-title {
+.my-project-work .my-project-content .project-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -185,7 +207,7 @@ body {
   max-width: 90%;
 }
 
-#work-section .container .card-work:nth-child(even) {
+#my-project .container .my-project-work:nth-child(even) {
   flex-direction: column;
 }
 
@@ -246,7 +268,7 @@ body {
   background: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
-  color: #6070ff;
+  color: gray;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -270,7 +292,7 @@ body {
 }
 
 .project-btn:hover {
-  background: #6070ff;
+  background: lightgray;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
@@ -280,7 +302,7 @@ body {
   color: #fff;
 }
 
-.card-work .card-content .project-btn {
+.my-project-work .my-project-content .project-btn {
   margin-top: 0;
 }
 
@@ -387,7 +409,13 @@ body {
   width: 48px;
   height: 48px;
   border: 1px solid #fff;
-}
+  transition: transform .2s;
+  }
+  
+  .skill-item-logo img:hover {
+    transform: scale(1.1);
+  }
+
 
 .skills .skill .skill-content .skill-item h6 {
   font-weight: 500;
@@ -474,10 +502,11 @@ body {
 
 /* Medium devices (tablets, 768px and up */
 @media (min-width: 768px) {
+  
   #navbar {
     padding: 5px 0;
   }
-
+  
   .nav-links {
     display: flex;
   }
@@ -525,19 +554,19 @@ body {
     width: 90%;
   }
 
-  .card-work {
+  .my-project-work {
     padding: 20px;
   }
 
-  .card-work .card-content {
+  .my-project-work .my-project-content {
     padding: 13px 18px;
   }
 
-  .card-work .card-content .project-btn {
+  .my-project-work .my-project-content .project-btn {
     margin-top: 10px;
   }
 
-  .card-work .card-content .project-title {
+  .my-project-work .my-project-content .project-title {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -583,7 +612,7 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #work-section .container {
+  #my-project .container {
     row-gap: 9rem;
   }
 
@@ -599,16 +628,16 @@ body {
     background-position: unset;
   }
 
-  .card-work {
+  .my-project-work {
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .card-work .card-content {
+  .my-project-work .my-project-content {
     padding: 35px 23px;
   }
 
-  #work-section .container .card-work:nth-child(even) {
+  #my-project .container .my-project-work:nth-child(even) {
     flex-direction: row-reverse;
   }
 
